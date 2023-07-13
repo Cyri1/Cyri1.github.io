@@ -21,12 +21,16 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
-
     <link
       rel="stylesheet"
       href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css"
     />
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"
+    />
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
   </head>
   <body>
     <header>
@@ -70,10 +74,8 @@
         url: 'https://gist.githubusercontent.com/Cyri1/db14713ed064d702b92d24197e764b50/raw/lunii-creations-titles-list.json',
         dataSrc: '',
       },
-      columns: [
-        { data: 'title' },
-        { data: 'age' }
-    ]
+      columns: [{ data: 'title' }, { data: 'age' }],
+      responsive: true,
     });
   });
 </script>
