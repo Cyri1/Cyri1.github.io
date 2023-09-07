@@ -21,6 +21,11 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -28,43 +33,165 @@
     </header>
     <main>
       <div class="container">
-        <h2>Conception du premier prototype !</h2>
+        <h2>Conception des premiers prototypes !</h2>
         <p>
-          Je vous présente le 1er prototype, tout n'est pas parfait mais il est tout à fait fonctionnel.<br>
-          Voici le lien du modèle 3D que j'ai utilisé : <a href="https://cad.onshape.com/documents/033a09b8ae4a91dea19a6e97/w/6df0479c18c477d4617960ee/e/e5d450ac52345536fd550366" target="_blank">Modèle Onshape</a>
+          Je vous présente les 1ers prototypes, tout n'est pas parfait mais ils
+          sont tout à fait fonctionnels.<br />
         </p>
-        <div id="carouselExampleControls" class="carousel carousel-dark slide" style="max-width: 350px;" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/print00.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/print0.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/print1.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/print2.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/print3.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/print4.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/print5.jpg" class="d-block w-100 img-fluid" alt="...">
+        <div class="row vh-50">
+          <div class="col-sm-6">
+            <h5>Version impression 3D :</h5>
+            <p>
+              Voici le lien du modèle 3D que j'ai utilisé :
+              <a
+                href="https://cad.onshape.com/documents/033a09b8ae4a91dea19a6e97/w/6df0479c18c477d4617960ee/e/e5d450ac52345536fd550366"
+                target="_blank"
+                >Modèle Onshape</a
+              >
+            </p>
+            <div>
+              <div
+                style="
+                  --swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;
+                "
+                class="swiper mySwiper2"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/print00.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print0.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print5.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/print00.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print0.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/print5.jpg" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="col-sm-6">
+            <h5>Version contreplaqué découpé au laser :</h5>
+            <p>Voici le lien du modèle SVG que j'ai utilisé : (à venir)</p>
+            <div>
+              <div
+                style="
+                  --swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;
+                "
+                class="swiper mySwiper4"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/laser1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser9.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser10.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/laser1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser9.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/laser10.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer class="container">
@@ -74,8 +201,110 @@
   </body>
 </html>
 <script>
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper('.mySwiper2', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
+  var swiper3 = new Swiper('.mySwiper3', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  var swiper4 = new Swiper('.mySwiper4', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: swiper3,
+    },
+  });
+
   $(function () {
     $('footer').load('include/footer.html');
     $('header').load('include/header.html');
   });
 </script>
+
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2,
+  .mySwiper4 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper,
+  .mySwiper3 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide,
+  .mySwiper3 .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active,
+  .mySwiper3 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
