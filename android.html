@@ -60,7 +60,11 @@
           <h4>
             Vidéo de présentation de l'appli : 
           </h4>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/-LOG7N8FA3o?si=Ga-L7JXNGYUm8ikt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="col-sm-6">
+            <div class="video-responsive">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-LOG7N8FA3o?si=Ga-L7JXNGYUm8ikt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
         <div>
           <h4>
@@ -209,3 +213,21 @@
     $('header').load('include/header.html');
   });
 </script>
+
+<style>
+
+.video-responsive { 
+overflow:hidden; 
+padding-bottom:56.25%; 
+position:relative; 
+height:0;
+}
+
+.video-responsive iframe {
+left:0; 
+top:0; 
+height:100%;
+width:100%;
+position:absolute;
+}
+</style>
